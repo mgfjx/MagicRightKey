@@ -13,6 +13,8 @@
 		2D25564F27507DD4006B4144 /* MagicRightKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D25564E27507DD4006B4144 /* MagicRightKeyTests.swift */; };
 		2D25565927507DD4006B4144 /* MagicRightKeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D25565827507DD4006B4144 /* MagicRightKeyUITests.swift */; };
 		2D25565B27507DD4006B4144 /* MagicRightKeyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D25565A27507DD4006B4144 /* MagicRightKeyUITestsLaunchTests.swift */; };
+		2DD797962750AAC5005E5147 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD797952750AAC5005E5147 /* FinderSync.swift */; };
+		2DD7979B2750AAC5005E5147 /* MagicSync.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2DD797932750AAC5005E5147 /* MagicSync.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,28 @@
 			remoteGlobalIDString = 2D25563A27507DD1006B4144;
 			remoteInfo = MagicRightKey;
 		};
+		2DD797992750AAC5005E5147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D25563327507DD1006B4144 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DD797922750AAC5005E5147;
+			remoteInfo = MagicSync;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2DD7979C2750AAC5005E5147 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2DD7979B2750AAC5005E5147 /* MagicSync.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2D25563B27507DD1006B4144 /* MagicRightKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicRightKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +66,10 @@
 		2D25565427507DD4006B4144 /* MagicRightKeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicRightKeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D25565827507DD4006B4144 /* MagicRightKeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicRightKeyUITests.swift; sourceTree = "<group>"; };
 		2D25565A27507DD4006B4144 /* MagicRightKeyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicRightKeyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2DD797932750AAC5005E5147 /* MagicSync.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MagicSync.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DD797952750AAC5005E5147 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		2DD797972750AAC5005E5147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DD797982750AAC5005E5147 /* MagicSync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MagicSync.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +94,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2DD797902750AAC5005E5147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,6 +110,7 @@
 				2D25563D27507DD1006B4144 /* MagicRightKey */,
 				2D25564D27507DD4006B4144 /* MagicRightKeyTests */,
 				2D25565727507DD4006B4144 /* MagicRightKeyUITests */,
+				2DD797942750AAC5005E5147 /* MagicSync */,
 				2D25563C27507DD1006B4144 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,6 +121,7 @@
 				2D25563B27507DD1006B4144 /* MagicRightKey.app */,
 				2D25564A27507DD4006B4144 /* MagicRightKeyTests.xctest */,
 				2D25565427507DD4006B4144 /* MagicRightKeyUITests.xctest */,
+				2DD797932750AAC5005E5147 /* MagicSync.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +154,16 @@
 			path = MagicRightKeyUITests;
 			sourceTree = "<group>";
 		};
+		2DD797942750AAC5005E5147 /* MagicSync */ = {
+			isa = PBXGroup;
+			children = (
+				2DD797952750AAC5005E5147 /* FinderSync.swift */,
+				2DD797972750AAC5005E5147 /* Info.plist */,
+				2DD797982750AAC5005E5147 /* MagicSync.entitlements */,
+			);
+			path = MagicSync;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,10 +174,12 @@
 				2D25563727507DD1006B4144 /* Sources */,
 				2D25563827507DD1006B4144 /* Frameworks */,
 				2D25563927507DD1006B4144 /* Resources */,
+				2DD7979C2750AAC5005E5147 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2DD7979A2750AAC5005E5147 /* PBXTargetDependency */,
 			);
 			name = MagicRightKey;
 			productName = MagicRightKey;
@@ -174,6 +222,23 @@
 			productReference = 2D25565427507DD4006B4144 /* MagicRightKeyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		2DD797922750AAC5005E5147 /* MagicSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DD7979F2750AAC5005E5147 /* Build configuration list for PBXNativeTarget "MagicSync" */;
+			buildPhases = (
+				2DD7978F2750AAC5005E5147 /* Sources */,
+				2DD797902750AAC5005E5147 /* Frameworks */,
+				2DD797912750AAC5005E5147 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicSync;
+			productName = MagicSync;
+			productReference = 2DD797932750AAC5005E5147 /* MagicSync.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,6 +260,9 @@
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = 2D25563A27507DD1006B4144;
 					};
+					2DD797922750AAC5005E5147 = {
+						CreatedOnToolsVersion = 13.1;
+					};
 				};
 			};
 			buildConfigurationList = 2D25563627507DD1006B4144 /* Build configuration list for PBXProject "MagicRightKey" */;
@@ -213,6 +281,7 @@
 				2D25563A27507DD1006B4144 /* MagicRightKey */,
 				2D25564927507DD4006B4144 /* MagicRightKeyTests */,
 				2D25565327507DD4006B4144 /* MagicRightKeyUITests */,
+				2DD797922750AAC5005E5147 /* MagicSync */,
 			);
 		};
 /* End PBXProject section */
@@ -235,6 +304,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2D25565227507DD4006B4144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DD797912750AAC5005E5147 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,6 +345,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2DD7978F2750AAC5005E5147 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DD797962750AAC5005E5147 /* FinderSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -281,6 +365,11 @@
 			isa = PBXTargetDependency;
 			target = 2D25563A27507DD1006B4144 /* MagicRightKey */;
 			targetProxy = 2D25565527507DD4006B4144 /* PBXContainerItemProxy */;
+		};
+		2DD7979A2750AAC5005E5147 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DD797922750AAC5005E5147 /* MagicSync */;
+			targetProxy = 2DD797992750AAC5005E5147 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -414,6 +503,7 @@
 		2D25565F27507DD4006B4144 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MagicRightKey/MagicRightKey.entitlements;
@@ -441,6 +531,7 @@
 		2D25566027507DD4006B4144 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MagicRightKey/MagicRightKey.entitlements;
@@ -561,6 +652,60 @@
 			};
 			name = Release;
 		};
+		2DD7979D2750AAC5005E5147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MagicSync/MagicSync.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E97K6G9K4T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MagicSync/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MagicSync;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mgfjx.MagicRightKey.MagicSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2DD7979E2750AAC5005E5147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MagicSync/MagicSync.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E97K6G9K4T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MagicSync/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MagicSync;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mgfjx.MagicRightKey.MagicSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -596,6 +741,15 @@
 			buildConfigurations = (
 				2D25566527507DD4006B4144 /* Debug */,
 				2D25566627507DD4006B4144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DD7979F2750AAC5005E5147 /* Build configuration list for PBXNativeTarget "MagicSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DD7979D2750AAC5005E5147 /* Debug */,
+				2DD7979E2750AAC5005E5147 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
