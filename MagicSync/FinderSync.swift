@@ -73,6 +73,21 @@ class FinderSync: FIFinderSync {
         let target = FIFinderSyncController.default().targetedURL()
         let items = FIFinderSyncController.default().selectedItemURLs()
         
+        let app = NSApplication.shared
+        
+//        let alert = NSAlert()
+//        alert.messageText = "请添加图片!"
+//        alert.beginSheetModal(for: window) { response in
+//        }
+        
+        do {
+            let data = try JSONSerialization.data(withJSONObject: ["shit": "fcuk"], options: JSONSerialization.WritingOptions.fragmentsAllowed)
+            let path = target!.path + "/hehe.txt"
+            try data.write(to: URL.init(fileURLWithPath: path))
+        } catch {
+            let str = error.localizedDescription
+            print(error)
+        }
         let item = sender as! NSMenuItem
         NSLog("sampleAction: menu item: %@, target = %@, items = ", item.title as NSString, target!.path as NSString)
         for obj in items! {
