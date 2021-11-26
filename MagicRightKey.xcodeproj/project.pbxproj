@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D25563F27507DD1006B4144 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D25563E27507DD1006B4144 /* AppDelegate.swift */; };
+		2D25564127507DD4006B4144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D25564027507DD4006B4144 /* Assets.xcassets */; };
+		2D25564427507DD4006B4144 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D25564227507DD4006B4144 /* MainMenu.xib */; };
+		2D25564F27507DD4006B4144 /* MagicRightKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D25564E27507DD4006B4144 /* MagicRightKeyTests.swift */; };
+		2D25565927507DD4006B4144 /* MagicRightKeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D25565827507DD4006B4144 /* MagicRightKeyUITests.swift */; };
+		2D25565B27507DD4006B4144 /* MagicRightKeyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D25565A27507DD4006B4144 /* MagicRightKeyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D25564B27507DD4006B4144 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D25563327507DD1006B4144 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D25563A27507DD1006B4144;
+			remoteInfo = MagicRightKey;
+		};
+		2D25565527507DD4006B4144 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D25563327507DD1006B4144 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D25563A27507DD1006B4144;
+			remoteInfo = MagicRightKey;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D25563B27507DD1006B4144 /* MagicRightKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicRightKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D25563E27507DD1006B4144 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D25564027507DD4006B4144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D25564327507DD4006B4144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2D25564527507DD4006B4144 /* MagicRightKey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MagicRightKey.entitlements; sourceTree = "<group>"; };
+		2D25564A27507DD4006B4144 /* MagicRightKeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicRightKeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D25564E27507DD4006B4144 /* MagicRightKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicRightKeyTests.swift; sourceTree = "<group>"; };
+		2D25565427507DD4006B4144 /* MagicRightKeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicRightKeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D25565827507DD4006B4144 /* MagicRightKeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicRightKeyUITests.swift; sourceTree = "<group>"; };
+		2D25565A27507DD4006B4144 /* MagicRightKeyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicRightKeyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D25563827507DD1006B4144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D25564727507DD4006B4144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D25565127507DD4006B4144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D25563227507DD1006B4144 = {
+			isa = PBXGroup;
+			children = (
+				2D25563D27507DD1006B4144 /* MagicRightKey */,
+				2D25564D27507DD4006B4144 /* MagicRightKeyTests */,
+				2D25565727507DD4006B4144 /* MagicRightKeyUITests */,
+				2D25563C27507DD1006B4144 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D25563C27507DD1006B4144 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D25563B27507DD1006B4144 /* MagicRightKey.app */,
+				2D25564A27507DD4006B4144 /* MagicRightKeyTests.xctest */,
+				2D25565427507DD4006B4144 /* MagicRightKeyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D25563D27507DD1006B4144 /* MagicRightKey */ = {
+			isa = PBXGroup;
+			children = (
+				2D25563E27507DD1006B4144 /* AppDelegate.swift */,
+				2D25564027507DD4006B4144 /* Assets.xcassets */,
+				2D25564227507DD4006B4144 /* MainMenu.xib */,
+				2D25564527507DD4006B4144 /* MagicRightKey.entitlements */,
+			);
+			path = MagicRightKey;
+			sourceTree = "<group>";
+		};
+		2D25564D27507DD4006B4144 /* MagicRightKeyTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D25564E27507DD4006B4144 /* MagicRightKeyTests.swift */,
+			);
+			path = MagicRightKeyTests;
+			sourceTree = "<group>";
+		};
+		2D25565727507DD4006B4144 /* MagicRightKeyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D25565827507DD4006B4144 /* MagicRightKeyUITests.swift */,
+				2D25565A27507DD4006B4144 /* MagicRightKeyUITestsLaunchTests.swift */,
+			);
+			path = MagicRightKeyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D25563A27507DD1006B4144 /* MagicRightKey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D25565E27507DD4006B4144 /* Build configuration list for PBXNativeTarget "MagicRightKey" */;
+			buildPhases = (
+				2D25563727507DD1006B4144 /* Sources */,
+				2D25563827507DD1006B4144 /* Frameworks */,
+				2D25563927507DD1006B4144 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicRightKey;
+			productName = MagicRightKey;
+			productReference = 2D25563B27507DD1006B4144 /* MagicRightKey.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D25564927507DD4006B4144 /* MagicRightKeyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D25566127507DD4006B4144 /* Build configuration list for PBXNativeTarget "MagicRightKeyTests" */;
+			buildPhases = (
+				2D25564627507DD4006B4144 /* Sources */,
+				2D25564727507DD4006B4144 /* Frameworks */,
+				2D25564827507DD4006B4144 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D25564C27507DD4006B4144 /* PBXTargetDependency */,
+			);
+			name = MagicRightKeyTests;
+			productName = MagicRightKeyTests;
+			productReference = 2D25564A27507DD4006B4144 /* MagicRightKeyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D25565327507DD4006B4144 /* MagicRightKeyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D25566427507DD4006B4144 /* Build configuration list for PBXNativeTarget "MagicRightKeyUITests" */;
+			buildPhases = (
+				2D25565027507DD4006B4144 /* Sources */,
+				2D25565127507DD4006B4144 /* Frameworks */,
+				2D25565227507DD4006B4144 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D25565627507DD4006B4144 /* PBXTargetDependency */,
+			);
+			name = MagicRightKeyUITests;
+			productName = MagicRightKeyUITests;
+			productReference = 2D25565427507DD4006B4144 /* MagicRightKeyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D25563327507DD1006B4144 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					2D25563A27507DD1006B4144 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					2D25564927507DD4006B4144 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 2D25563A27507DD1006B4144;
+					};
+					2D25565327507DD4006B4144 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 2D25563A27507DD1006B4144;
+					};
+				};
+			};
+			buildConfigurationList = 2D25563627507DD1006B4144 /* Build configuration list for PBXProject "MagicRightKey" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D25563227507DD1006B4144;
+			productRefGroup = 2D25563C27507DD1006B4144 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D25563A27507DD1006B4144 /* MagicRightKey */,
+				2D25564927507DD4006B4144 /* MagicRightKeyTests */,
+				2D25565327507DD4006B4144 /* MagicRightKeyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D25563927507DD1006B4144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D25564127507DD4006B4144 /* Assets.xcassets in Resources */,
+				2D25564427507DD4006B4144 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D25564827507DD4006B4144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D25565227507DD4006B4144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D25563727507DD1006B4144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D25563F27507DD1006B4144 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D25564627507DD4006B4144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D25564F27507DD4006B4144 /* MagicRightKeyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D25565027507DD4006B4144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D25565927507DD4006B4144 /* MagicRightKeyUITests.swift in Sources */,
+				2D25565B27507DD4006B4144 /* MagicRightKeyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D25564C27507DD4006B4144 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D25563A27507DD1006B4144 /* MagicRightKey */;
+			targetProxy = 2D25564B27507DD4006B4144 /* PBXContainerItemProxy */;
+		};
+		2D25565627507DD4006B4144 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D25563A27507DD1006B4144 /* MagicRightKey */;
+			targetProxy = 2D25565527507DD4006B4144 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D25564227507DD4006B4144 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D25564327507DD4006B4144 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D25565C27507DD4006B4144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D25565D27507DD4006B4144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2D25565F27507DD4006B4144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MagicRightKey/MagicRightKey.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E97K6G9K4T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mgfjx.MagicRightKey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2D25566027507DD4006B4144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MagicRightKey/MagicRightKey.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E97K6G9K4T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mgfjx.MagicRightKey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2D25566227507DD4006B4144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E97K6G9K4T;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mgfjx.MagicRightKeyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicRightKey.app/Contents/MacOS/MagicRightKey";
+			};
+			name = Debug;
+		};
+		2D25566327507DD4006B4144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E97K6G9K4T;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mgfjx.MagicRightKeyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicRightKey.app/Contents/MacOS/MagicRightKey";
+			};
+			name = Release;
+		};
+		2D25566527507DD4006B4144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E97K6G9K4T;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mgfjx.MagicRightKeyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MagicRightKey;
+			};
+			name = Debug;
+		};
+		2D25566627507DD4006B4144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E97K6G9K4T;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mgfjx.MagicRightKeyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MagicRightKey;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D25563627507DD1006B4144 /* Build configuration list for PBXProject "MagicRightKey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D25565C27507DD4006B4144 /* Debug */,
+				2D25565D27507DD4006B4144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D25565E27507DD4006B4144 /* Build configuration list for PBXNativeTarget "MagicRightKey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D25565F27507DD4006B4144 /* Debug */,
+				2D25566027507DD4006B4144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D25566127507DD4006B4144 /* Build configuration list for PBXNativeTarget "MagicRightKeyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D25566227507DD4006B4144 /* Debug */,
+				2D25566327507DD4006B4144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D25566427507DD4006B4144 /* Build configuration list for PBXNativeTarget "MagicRightKeyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D25566527507DD4006B4144 /* Debug */,
+				2D25566627507DD4006B4144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D25563327507DD1006B4144 /* Project object */;
+}
