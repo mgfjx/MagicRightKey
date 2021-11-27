@@ -10,7 +10,7 @@ import FinderSync
 
 class FinderSync: FIFinderSync {
 
-    var myFolderURL = URL(fileURLWithPath: "/Users/Shared/MySyncExtension Documents")
+    var myFolderURL = URL(fileURLWithPath: "/")
     
     override init() {
         super.init()
@@ -66,9 +66,24 @@ class FinderSync: FIFinderSync {
     
     override func menu(for menuKind: FIMenuKind) -> NSMenu {
         // Produce a menu for the extension.
-        let menu = NSMenu(title: "Mgfjx0")
-        menu.addItem(withTitle: "Mgfjx", action: #selector(sampleAction(_:)), keyEquivalent: "")
-        return menu
+        switch menuKind {
+        case .contextualMenuForItems:
+            return self.fileMenu()
+        case .contextualMenuForContainer:
+            return self.directoryMenu()
+        case .contextualMenuForSidebar:
+            let menu = NSMenu(title: "Mgfjx0")
+            menu.addItem(withTitle: "Mgfjx0", action: #selector(sampleAction(_:)), keyEquivalent: "")
+            return menu
+        case .toolbarItemMenu:
+            let menu = NSMenu(title: "Mgfjx4")
+            menu.addItem(withTitle: "Mgfjx4", action: #selector(sampleAction(_:)), keyEquivalent: "")
+            return menu
+        @unknown default:
+            let menu = NSMenu(title: "Mgfjx5")
+            menu.addItem(withTitle: "Mgfjx5", action: #selector(sampleAction(_:)), keyEquivalent: "")
+            return menu
+        }
     }
     
     @IBAction func sampleAction(_ sender: AnyObject?) {
@@ -80,6 +95,54 @@ class FinderSync: FIFinderSync {
         for obj in items! {
             NSLog("    %@", obj.path as NSString)
         }
+    }
+    
+    /// 右键点击file
+    func fileMenu() -> NSMenu {
+        
+        let items = FIFinderSyncController.default().selectedItemURLs() ?? []
+        var image: NSImage?
+        if items.count == 1 {
+            do {
+                let imageData = try Data.init(contentsOf: items.first!)
+                image = NSImage.init(data: imageData)
+            } catch {
+                let errStr = error.localizedDescription
+                print(error)
+            }
+        }
+        
+        if image == nil {
+            return NSMenu.init()
+        }
+        
+        let menu = NSMenu(title: "AppIconMaker")
+        let menuItem = NSMenuItem.init(title: "AppIconMaker", action: #selector(itemClicked(_:)), keyEquivalent: "")
+        let subMenu = NSMenu(title: "AppIconMaker")
+        do {
+            let item1 = NSMenuItem.init(title: "iPhone/iPad", action: #selector(itemClicked(_:)), keyEquivalent: "")
+            let item2 = NSMenuItem.init(title: "MacOS", action: #selector(itemClicked(_:)), keyEquivalent: "")
+            let item3 = NSMenuItem.init(title: "Android", action: #selector(itemClicked(_:)), keyEquivalent: "")
+            subMenu.addItem(item1)
+            subMenu.addItem(item2)
+            subMenu.addItem(item3)
+        }
+        menu.addItem(menuItem)
+        menuItem.submenu = subMenu
+        return menu
+    }
+    
+    /// 右键点击文件夹
+    func directoryMenu() -> NSMenu {
+        let menu = NSMenu(title: "Mgfjx2")
+        menu.addItem(withTitle: "Mgfjx2", action: #selector(sampleAction(_:)), keyEquivalent: "")
+        return menu
+    }
+    
+    
+    @objc func itemClicked(_ item: NSMenuItem) {
+        let target = FIFinderSyncController.default().targetedURL()
+        print(item.title)
     }
 
 }
