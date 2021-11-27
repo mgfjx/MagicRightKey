@@ -13,6 +13,7 @@
 		2D25564F27507DD4006B4144 /* MagicRightKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D25564E27507DD4006B4144 /* MagicRightKeyTests.swift */; };
 		2D25565927507DD4006B4144 /* MagicRightKeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D25565827507DD4006B4144 /* MagicRightKeyUITests.swift */; };
 		2D25565B27507DD4006B4144 /* MagicRightKeyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D25565A27507DD4006B4144 /* MagicRightKeyUITestsLaunchTests.swift */; };
+		2D4D7C4D2751D5D100A46A69 /* MagicSync.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D4D7C4C2751D5D100A46A69 /* MagicSync.xcassets */; };
 		2DD797962750AAC5005E5147 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD797952750AAC5005E5147 /* FinderSync.swift */; };
 		2DD7979B2750AAC5005E5147 /* MagicSync.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2DD797932750AAC5005E5147 /* MagicSync.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		2D25565427507DD4006B4144 /* MagicRightKeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicRightKeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D25565827507DD4006B4144 /* MagicRightKeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicRightKeyUITests.swift; sourceTree = "<group>"; };
 		2D25565A27507DD4006B4144 /* MagicRightKeyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicRightKeyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2D4D7C4C2751D5D100A46A69 /* MagicSync.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MagicSync.xcassets; sourceTree = "<group>"; };
 		2DD797932750AAC5005E5147 /* MagicSync.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MagicSync.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD797952750AAC5005E5147 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		2DD797972750AAC5005E5147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				2DD797952750AAC5005E5147 /* FinderSync.swift */,
 				2DD797972750AAC5005E5147 /* Info.plist */,
 				2DD797982750AAC5005E5147 /* MagicSync.entitlements */,
+				2D4D7C4C2751D5D100A46A69 /* MagicSync.xcassets */,
 			);
 			path = MagicSync;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D4D7C4D2751D5D100A46A69 /* MagicSync.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

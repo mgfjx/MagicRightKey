@@ -51,7 +51,7 @@ class FinderSync: FIFinderSync {
     // MARK: - Menu and toolbar item support
     
     override var toolbarItemName: String {
-        return "FinderSy"
+        return "MagicRightKey"
     }
     
     override var toolbarItemToolTip: String {
@@ -59,13 +59,15 @@ class FinderSync: FIFinderSync {
     }
     
     override var toolbarItemImage: NSImage {
-        return NSImage(named: NSImage.cautionName)!
+        let toolBarImage = NSImage(named: "MagicIcon")!
+        toolBarImage.isTemplate = true
+        return toolBarImage
     }
     
     override func menu(for menuKind: FIMenuKind) -> NSMenu {
         // Produce a menu for the extension.
-        let menu = NSMenu(title: "")
-        menu.addItem(withTitle: "Example Menu Item", action: #selector(sampleAction(_:)), keyEquivalent: "")
+        let menu = NSMenu(title: "Mgfjx0")
+        menu.addItem(withTitle: "Mgfjx", action: #selector(sampleAction(_:)), keyEquivalent: "")
         return menu
     }
     
@@ -73,21 +75,6 @@ class FinderSync: FIFinderSync {
         let target = FIFinderSyncController.default().targetedURL()
         let items = FIFinderSyncController.default().selectedItemURLs()
         
-        let app = NSApplication.shared
-        
-//        let alert = NSAlert()
-//        alert.messageText = "请添加图片!"
-//        alert.beginSheetModal(for: window) { response in
-//        }
-        
-        do {
-            let data = try JSONSerialization.data(withJSONObject: ["shit": "fcuk"], options: JSONSerialization.WritingOptions.fragmentsAllowed)
-            let path = target!.path + "/hehe.txt"
-            try data.write(to: URL.init(fileURLWithPath: path))
-        } catch {
-            let str = error.localizedDescription
-            print(error)
-        }
         let item = sender as! NSMenuItem
         NSLog("sampleAction: menu item: %@, target = %@, items = ", item.title as NSString, target!.path as NSString)
         for obj in items! {
