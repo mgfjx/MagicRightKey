@@ -67,22 +67,18 @@ class FinderSync: FIFinderSync {
     override func menu(for menuKind: FIMenuKind) -> NSMenu {
         // Produce a menu for the extension.
         switch menuKind {
-        case .contextualMenuForItems:
+        case .contextualMenuForItems: //右键单击
             return self.fileMenu()
-        case .contextualMenuForContainer:
+        case .contextualMenuForContainer: //右键点击文件夹空白背景
             return self.directoryMenu()
         case .contextualMenuForSidebar:
             let menu = NSMenu(title: "Mgfjx0")
             menu.addItem(withTitle: "Mgfjx0", action: #selector(sampleAction(_:)), keyEquivalent: "")
             return menu
         case .toolbarItemMenu:
-            let menu = NSMenu(title: "Mgfjx4")
-            menu.addItem(withTitle: "Mgfjx4", action: #selector(sampleAction(_:)), keyEquivalent: "")
-            return menu
+            return NSMenu.init()
         @unknown default:
-            let menu = NSMenu(title: "Mgfjx5")
-            menu.addItem(withTitle: "Mgfjx5", action: #selector(sampleAction(_:)), keyEquivalent: "")
-            return menu
+            return NSMenu.init()
         }
     }
     
@@ -108,7 +104,7 @@ class FinderSync: FIFinderSync {
                 image = NSImage.init(data: imageData)
             } catch {
                 let errStr = error.localizedDescription
-                print(error)
+                print(errStr)
             }
         }
         
@@ -135,13 +131,23 @@ class FinderSync: FIFinderSync {
     /// 右键点击文件夹
     func directoryMenu() -> NSMenu {
         let menu = NSMenu(title: "Mgfjx2")
-        menu.addItem(withTitle: "Mgfjx2", action: #selector(sampleAction(_:)), keyEquivalent: "")
+        menu.addItem(withTitle: "当前点击的是文件夹背景", action: #selector(sampleAction(_:)), keyEquivalent: "")
         return menu
     }
     
     
     @objc func itemClicked(_ item: NSMenuItem) {
         let target = FIFinderSyncController.default().targetedURL()
+        let items = FIFinderSyncController.default().selectedItemURLs()!
+        let dic = ["shit": "fuck"]
+        do {
+            let data = try JSONSerialization.data(withJSONObject: dic, options: JSONSerialization.WritingOptions.fragmentsAllowed)
+            let path = "\(target!.path)/haha.txt"
+            try FileManager.default.createFile(atPath: path, contents: data, attributes: nil)
+        } catch {
+            let errStr = error.localizedDescription
+            print(errStr)
+        }
         print(item.title)
     }
 
